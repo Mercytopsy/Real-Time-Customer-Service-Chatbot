@@ -1,0 +1,581 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Bellroy</title>
+    <link href="{% static 'favicon.ico' %}" rel='icon' type='image/x-icon'>
+    <!-- Bootstrap -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/chat.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/jquery.convform.css' %}">
+
+    <script src="{% static 'js/jquery.convform.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/custom.js' %}"></script>
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="js/html5shiv.min.js"></script>
+          <script src="js/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+
+    <!-- CHAT BOT-->
+    <div class="chat_icon">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+
+    </div>
+
+    <div class="chat_box">
+        <div id="chat" class="conv-form-wrapper">
+        <form action="" method="GET">
+            <select name="programmer"
+                data-conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <div data-conv-fork="programmer">
+                <div data-conv-case="yes">
+                    <input type="texarea" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                </div>
+                <div data-conv-case="no">
+                    <select name="thought"
+                        data-conv-question="Have you ever thought about learning? Programming is fun!">
+                        <option value="yes">Yes</option>
+                        <option value="no">No..</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
+    <!-- CHAT BOT END -->
+
+
+    <header class="">
+        <div class="container-fluid bg-primary">
+            <div class="row">
+                <div class="col-sm-12 well-sm danger text-center">
+                    <a href="#" class="white ">
+                        Get Connected to the world!!!
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+Navigation Start
+-->
+
+        <nav class="navbar navbar-inverse padding-0 margin-0 border-radius-0 overflow-hidden-mobile">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-12">
+
+
+                        <!-- Cart Icon Start -->
+
+
+
+                        <!-- Cart Icon End -->
+
+                        <!-- Login Up Modal Start -->
+
+                    </div>
+                    <!-- Login up Modal End -->
+
+                    <!-- Nav Header start -->
+
+                    <div class="navbar-header brandmobilecenter ">
+
+                        <!-- Logo Start -->
+                        <a href="index.html" class="navbar-brand padding-0 margin-0 border-0 border-radius-0 logo-fix">
+                            <!--<img class="img-responsive logo" src="img/logo.png"/>              -->
+                        </a>
+                        <!-- Logo End -->
+
+                        <!-- Menu Responive Toggle Start -->
+
+                        <!-- Menu Responive Toggle End -->
+
+                    </div>
+                    <!-- Nav Header end -->
+
+
+                    <!-- Meun Start (that will Mobile toggle) -->
+                    <div id="dropnav" class="navbar-collapse collapse">
+
+                        <!-- Links in Menu Start -->
+                        <ul class="nav navbar-nav mobile-margin-top-60">
+                            <li class="active">
+                                <a href="/"><span class="glyphicon glyphicon-home"
+                                        aria-hidden="true"></span></a>
+                            </li>
+                            <li class="active"><a href="/">Home</a></li>
+                            <!-- Category Dropdown Start -->
+                            <li><a href="#">Pricing</a></li>
+                            <!-- Category Dropdown End -->
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <!-- Links in Menu End -->
+
+
+                        <!-- Sign up and Login start -->
+
+                        <ul class="nav navbar-nav navbar-right">
+
+                            <li>
+                                <!-- sign up modal trigger -->
+                                <a class="outline-0" href="#signupModal" data-toggle="modal"
+                                    data-target="#signupModal"><span class="glyphicon glyphicon-user"></span> Sign
+                                    Up</a>
+
+                            </li>
+
+                            <li>
+                                <!-- login modal trigger -->
+                                <a class="outline-0" href="#loginModal" data-toggle="modal"
+                                    data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                            </li>
+                        </ul>
+
+
+                        <!-- Sign Up Modal Start -->
+                        <div class="modal fade" id="signupModal" role="dialog">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        Sign Up Now
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal">
+
+                                            <div class="form-group">
+
+                                                <label class="control-label col-sm-5 text-align-left"
+                                                    for="username"><span class="glyphicon glyphicon-user"></span>
+                                                    Username:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control" id="Email"
+                                                        placeholder="Enter username" name="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+
+
+                                                <label class="control-label col-sm-5 text-align-left" for="name"><span
+                                                        class="glyphicon glyphicon-registration-mark"></span> Full
+                                                    Name:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="text" class="form-control" id="Email"
+                                                        placeholder="Enter username" name="name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+
+
+                                                <label class="control-label col-sm-5 text-align-left"
+                                                    for="password"><span class="glyphicon glyphicon-lock"></span>
+                                                    Password:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Enter password" name="password">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+
+
+                                                <label class="control-label col-sm-5 text-align-left"
+                                                    for="password2"><span class="glyphicon glyphicon-lock"></span>
+                                                    Re-Type Password:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="password" class="form-control" id="password"
+                                                        placeholder="Retype password" name="password2">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" name="remember"> Accept Terms &
+                                                            Conditions.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-default">Submit</button>
+                                                </div>
+                                            </div>
+
+
+
+
+
+
+
+                                        </form>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Sign Up Modal End -->
+                        <!-- Login Up Modal Start -->
+                        <div class="modal fade" id="loginModal" role="dialog">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        Login
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="form-horizontal" action="/action_page.html">
+                                            <div class="form-group">
+
+                                                <label class="control-label col-sm-5 text-align-left" for="email"><span
+                                                        class="glyphicon glyphicon-envelope"></span> Email:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="email" class="form-control" id="email"
+                                                        placeholder="Enter email" name="email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="control-label col-sm-5 text-align-left" for="pwd"><span
+                                                        class="glyphicon glyphicon-lock"></span> Password:</label>
+                                                <div class="col-sm-7">
+                                                    <input type="password" class="form-control" id="pwd"
+                                                        placeholder="Enter password" name="pwd">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox" name="remember"> Remember
+                                                            me</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-default">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Login up Modal End -->
+
+
+
+
+
+                        <!-- Sign up and Login end -->
+
+
+
+
+                        <!-- Search Form start -->
+
+                        <form class="navbar-form navbar-right">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+                                        <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                        <!-- Search Form end -->
+                    </div>
+                    <!-- Meun Start (that will Mobile toggle) -->
+
+
+                </div>
+            </div>
+            </div>
+        </nav>
+        <!--
+Navigation End
+-->
+    </header>
+
+    <!--<input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+        <div class="rapper">
+            <div class="eader">
+                <h6>Let's Chat - Online</h6>
+            </div>
+            <div class="text-center p-2"> <span>Please fill out the form to start chat!</span> </div>
+            <div class="chat-form"> <input type="text" class="form-control" placeholder="Name"> <input type="text" class="form-control" placeholder="Email"> <textarea class="form-control" placeholder="Your Text Message"></textarea> <button class="btn btn-success btn-block">Submit</button> </div>
+        </div>-->
+
+
+
+    <!-- Large Banner Start -->
+    <div id="contentWrapper">
+        <div id="contentWrapperWhite">
+
+            <div class="container-fluid margin-bottom-20">
+                <div class="row padding-0">
+                    <div class="col-sm-12 padding-0">
+                        <a href="/" class="homebanner">
+                            <img src="https://img.lovepik.com/photo/40064/2674.jpg_wh860.jpg" />
+                            <div class="homebannertitle">
+                                <p class="text-white">
+                                    Considered using digital goods to enhance your everyday
+                                </p>
+                                <div class="shop-now">
+                                    <span>Get Started</span>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Large Banner End -->
+
+
+            <!-- home block 1 Start -->
+
+            <!-- home block 1 End -->
+
+
+            <div class="container-fluid padding-bottom-20 padding-top-20"
+                style="background:transparent url('https://images.pexels.com/photos/267447/pexels-photo-267447.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center /cover">
+                <div class="row padding-0">
+                    <div class="container">
+                        <div class="col-sm-4">
+                            <div class="card text-center rounded"
+                                style="width: 30rem; padding: 20px; background-color: white;">
+                                <div class="card-body">
+                                    <h2 class="card-title bold-text">SPEED</h5>
+                                        <p class="card-text">Instant delivery on all products using cutting-edge
+                                            technology.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center rounded"
+                                style="width: 30rem; background-color: white; padding: 20px;">
+                                <div class="card-body">
+                                    <h2 class="card-title bold-text">AFFORDABILITY</h5>
+                                        <p class="card-text">If it's not affordable, it's not MobileNig! Quality +
+                                            Affordability + Legitimacy = MobileNig.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card text-center rounded"
+                                style="width: 30rem; background-color: white; padding: 20px;">
+                                <div class="card-body">
+                                    <h2 class="card-title bold-text">SUPPORT</h5>
+                                        <p class="card-text">You are not alone, our customer service is always available
+                                            for you at all time.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="container padding-50">
+                <!-- BreadCrubms Start -->
+
+                <!-- BreadCrubms End -->
+
+                <!-- Starts -->
+
+                <div class="row">
+
+
+
+                    <div class="col-sm-12">
+                        <h2 class="h1 text-align-center bold-text padding-bottom-20"
+                            style="margin-right: 60px; color: black; font-size: 50px; padding-top: 20px; padding-bottom: 10px;">
+                            Our Products</h2>
+                        <hr style="width: 85px; border: 2px solid #FFCE54;">
+                        <br>
+                        <div class="row">
+
+                            <!-- single product -->
+                            <div class="col-sm-4 text-center margin-bottom-20">
+                                <div class="card shadow p-3 mb-5 bg-white rounded"
+                                    style="width:300px; box-shadow: 5px 10px;">
+                                    <img class="card-img-top" height="300px" src="{% static 'img/card.png' %}"
+                                        alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title bold-text h1">Data Plans</h4>
+                                        <p class="card-text text-center" style="font-size: 16px;">MTN, GLO and 9MOBILE
+                                            data plans at affordable prices. Get 1GB as low as #</p>
+                                        <button
+                                            style="border: 1px solid; outline: none; padding: 10px 23px; border-radius: 3px; background-color: white;"><a
+                                                href="#" style="color: black;">By Now</a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-4 text-center margin-bottom-20">
+                                <div class="card" style="width:300px; box-shadow: 5px 10px;">
+                                    <img class="card-img-top" height="300px" src="{% static 'img/download.png' %}"
+                                        alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title bold-text h1">Airtime Vtu</h4>
+                                        <p class="card-text text-center" style="font-size: 16px;">Recharge airtime VTU
+                                            directly to mobile numbers and get instant value at discounted rate.</p>
+                                        <button
+                                            style="border: 1px solid; outline: none; padding: 10px 23px; border-radius: 3px; background-color: white;"><a
+                                                href="#" style="color: black;">Recharge Now</a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-sm-4 text-center margin-bottom-20">
+                                <div class="card" style="width:300px; box-shadow: 5px 10px;">
+                                    <img class="card-img-top" height="300px" width="300px"
+                                        src="{% static 'img/istockphoto-1011857916-612x612.jpg' %}" alt="Card image">
+                                    <div class="card-body">
+                                        <h4 class="card-title bold-text h1">Bills Payment</h4>
+                                        <p class="card-text text-center" style="font-size: 16px;">GOTV, DSTV, STARTIMES,
+                                            SMILE, SPECTRANET, ELECTRICITY BILLS and WAEC SCRATCH CARD at discounted
+                                            rate.</p>
+                                        <button
+                                            style="border: 1px solid; outline: none; padding: 10px 23px; border-radius: 3px; background-color: white;"><a
+                                                href="#" style="color: black;">Subscribe now</a></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <footer class="bg-dark text-white padding-top-20 padding-bottom-20">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="h2">Help /</div>
+                    <ul class="margin-0 padding-0 list-style-none margin-bottom-20">
+                        <li><a href="#">First item</a></li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6 margin-bottom-20">
+                    <div class="h2">Shop /</div>
+                    <ul class="margin-0 padding-0 list-style-none">
+                        <li>First item</li>
+                        <li>Second item</li>
+                        <li>Third item</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-xs-12  margin-bottom-20">
+                    <div class="h2">Follow us /</div>
+
+                    <a href=""><i class="fa fa-facebook-square fa-3x"></i></a>
+                    &nbsp;
+                    <a href=""><i class="fa fa-twitter-square fa-3x"></i></a>
+                    &nbsp;
+                    <a href=""><i class="fa fa-youtube-square fa-3x"></i></a>
+                    &nbsp;
+                    <a href=""><i class="fa fa-pinterest-square fa-3x"></i></a>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 text-left small color-light">
+                    <i class="fa fa-server"></i> Powered by <a href="http://www.idb-bisew.org"
+                        target="_blank">IDB-BISEW</a>
+                </div>
+                <div class="col-xs-6 text-right small color-light">&copy; 2017. Develop by Muntasir. <br></div>
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed-->
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/Chat.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+
+
+</body>
