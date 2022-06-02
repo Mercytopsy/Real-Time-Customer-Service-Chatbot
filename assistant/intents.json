@@ -1,0 +1,174 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "what can I do for you?",
+        "How can I help?"
+      ]
+    },
+    {
+      "tag": "well-being",
+      "patterns": [
+        "How are you",
+        "Hope you are good",
+        "what's up"
+      ],
+      "responses": [
+        "I'm fine, what about you?"
+      ]
+    },
+    {
+      "tag": "qresp",
+      "patterns": [
+        "I'm good",
+        "I'm fine"
+      ],
+      "responses": [
+        "what can I do for you?",
+        "How can I help you?"
+      ]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "what is your name",
+        "who are you"
+      ],
+      "responses": [
+        "let's just say I'm your personal assistant to guide you through our products"
+      ]
+    },
+    {
+      "tag": "friendship",
+      "patterns": [
+        "I like you",
+        "Will you be my friend"
+      ],
+      "responses": [
+        "Thank you, let's say you are amazing!!!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure","You're welcome"]
+    },
+    {
+      "tag": "items",
+      "patterns": [
+        "Do you have data subscription?",
+        "Do you sell Airtime?",
+        "Do you sell Bitcoins?",
+        "What do you sell?"
+      ],
+      "responses": [
+        "We sell 1)Airtime: MTN, Airtel, Glo, G-Mobile and Data Subscription. \n 2)Data Subscriptions for Gotv, Startime, Dstv. \n 3)We also have Bitcoins",
+        "We have 1)Airtime: MTN, Airtel, Glo, G-Mobile and Data Subscription. \n 2)Data Subscriptions for Gotv, Startime, Dstv. \n 3)We also have Bitcoins "
+      ]
+    },
+    {
+      "tag": "price",
+      "patterns": [
+        "How much can I get MTN Airtime?",
+        "How much can I get Glo Airtime?",
+        "How much can I get Airtel Airtime?",
+        "How much can I get G-Mobile Airtime?",
+        "How much can I get MTN Data Subscription?",
+        "what's the price of Glo Data Subscription?",
+        "How much is Data Subscription for Gotv?",
+        "How much is Data Subscription for Startime?",
+        "How much is Data Subscription for Dstv?",
+        "How much is Bitcoin?"
+      ],
+      "responses": [
+        "The price of the Airtime, Data Subscription and Bitcoins are displayed on the page",
+        "You can check it out on the page"
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?",
+        "How can I pay"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "verification",
+      "patterns": [
+        "How long will my account be credited?",
+        "How long should I wait to see my Airtime?",
+        "When do I see my Data Subscription?",
+        "When will I know my payment has been verified",
+        "When will I see my Bitcoin",
+        "How can I know my money has been verified"
+      ],
+      "responses": [
+        "Wait within 24hrs your transaction has already been confirmed, if not contact our customer care via hotline on the contact section",
+        "Wait within 24hrs if transaction not successful, contact our customer care via hotline on the contact section"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "help",
+      "patterns": [
+        "I need your help",
+        "I need your assistance"
+        
+      ],
+      "responses": [
+        "What can I do for you?",
+        "What assistance do you want me to render for you"
+      ]
+    },
+    {
+      "tag": "buy",
+      "patterns": [
+        "I want to buy Airtime",
+        "I want to buy Data Subscription",
+        "I want to buy Bitcoins"
+        
+      ],
+      "responses": [
+        "The prices of the Airtime, Data Subscription and Bitcoins available are displayed on the page, check them out",
+        "Thank you for coming to our website, you can check the prices of item you're interested in purchasing on our website page"
+      ]
+    }
+  ]
+}
